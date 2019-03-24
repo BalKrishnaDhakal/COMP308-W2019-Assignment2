@@ -1,0 +1,41 @@
+<% include ./partials/header.ejs %>
+
+   <!-- <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to <%= title %></h1>
+        <% if ((title == "Contact") && (displayName == "admin")) { %>
+          <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
+        <% } %>
+      </div>
+    </div>
+-->
+
+
+ 
+
+
+<% if (title == "Home"){%>
+
+<% include ./partials/home.ejs %> <%} %>
+
+<% if (title == "About") {%>
+
+<% include ./partials/about.ejs %> <%} %>
+
+<!--Contents for Projects page-->
+<% if (title == "Projects") {%>
+
+<% include ./partials/projects.ejs %> <%} %>
+
+<!--Contents for Services page-->
+<% if (title == "Services") {%>
+
+<% include ./partials/services.ejs %> <%} %>
+
+<!--Contents for Services page-->
+<% if (title == "Contact") {%>
+
+<% include ./partials/contact.ejs %> <%} %> 
+<% include ./partials/footer.ejs %>
+
+
