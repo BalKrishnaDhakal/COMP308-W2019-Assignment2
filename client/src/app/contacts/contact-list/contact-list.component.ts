@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactListService } from 'src/app/services/contact-list.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
+
 import { Router } from '@angular/router';
 import { Contact } from 'src/app/models/contact';
 

@@ -26,7 +26,7 @@ import { ContactDeleteComponent } from './contacts/contact-delete/contact-delete
 
 // Services
 import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
-//import { ContactListComponent } from './contacts/contact-list/contact-list.component';
+
 
 @NgModule({
   declarations: [
@@ -50,8 +50,8 @@ import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messag
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-
-    HttpClientModule
+    HttpClientModule,
+    FlashMessagesModule
   ],
   providers: [FlashMessagesService],
   bootstrap: [AppComponent]
