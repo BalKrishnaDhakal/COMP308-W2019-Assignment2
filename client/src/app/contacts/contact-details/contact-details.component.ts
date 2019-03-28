@@ -1,3 +1,9 @@
+/* Student Name: bal KrishnaDhakal
+Student ID: 300916314
+Description: COMP308-W2019-Assignment2, MEAN Portfolio App
+Date Created: March 27, 2019
+
+*/
 import { Component, OnInit } from '@angular/core';
 
 import { ContactListService } from 'src/app/services/contact-list.service';
