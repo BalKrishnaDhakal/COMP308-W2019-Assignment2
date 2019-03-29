@@ -1,13 +1,39 @@
-<app-base-page></app-base-page>
-<div *ngIf="isLoggedIn()" class="container">
-    <div class="row">
-        <div class="col col-md-6">
-            <div class="card">
-                <h5 class="card-header alert-success">Secure</h5>
-                <div class="card-body">
-                    <a routerLink="contact-list" class="btn btn-primary"><i class="fas fa-users fa-lg"></i> Contact List</a>
+<!--<app-base-page></app-base-page> -->
+
+
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+
+        <div id="myAddress" class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-default text-center">
+
+                <h6>Bal Krishna Dhakal</h6>
+                <h6>330 Mc-Cowan Road, Toronto, ON, Canada</h6>
+                <h6>Email: bkdhakal2014@gmail.com</h6>
+                <h6>Cell: 6476373701</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Contact Me</h2>
+                <h3 class="section-subheading text-muted">Please, Login to see my contact list.</h3>
+            </div>
+        </div>
+
+        <div *ngIf="isLoggedIn()" class="row">
+            <div class="col-lg-4 text-center"></div>
+            <div class="col-lg-4 text-center">
+                <div class="card">
+                    <h5 class="card-header alert-success">Secure</h5>
+                    <div class="card-body">
+                        <a routerLink="contact-list" class="btn btn-primary"><i class="fas fa-users fa-lg"></i> Contact List</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
-</div>
+</section>
