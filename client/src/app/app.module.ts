@@ -28,6 +28,7 @@ import { ContactDeleteComponent } from './contacts/contact-delete/contact-delete
 import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
 import { AuthService } from './services/auth.service';
 import { JwtModule, JwtHelperService, JwtInterceptor } from '@auth0/angular-jwt';
+import { AuthGuard } from './guards/auth.guard';
 
 
 export function jwtTokenGetter() {
@@ -66,7 +67,7 @@ export function jwtTokenGetter() {
       }
     })
   ],
-  providers: [FlashMessagesService],
+  providers: [FlashMessagesService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
