@@ -2,8 +2,8 @@
     <a class="navbar-brand" routerLink="/" style="margin-left:-30px">
         <img src="/assets/images/bal_logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
@@ -13,53 +13,45 @@
 
 
                 <a class="nav-link" routerLink="/"><i class="fa fa-2x fa-university"></i> Home
-            <span class="sr-only">(current)</span></a
-          >
-        </li>
+          <span class="sr-only">(current)</span></a>
+            </li>
 
 
 
-        <li class="nav-item">
+            <li class="nav-item">
 
 
-          <a class="nav-link" routerLink="/about"
-            ><i class="fa fa-2x fa-user"></i> About</a
-          >
-        </li>
+                <a class="nav-link" routerLink="/about"><i class="fa fa-2x fa-user"></i> About</a>
+            </li>
 
 
-        <li class="nav-item">
+            <li class="nav-item">
 
 
-          <a class="nav-link" routerLink="/projects"
-            ><i class="fa fa-2x fa-tasks"></i> Projects</a
-          >
-        </li>
+                <a class="nav-link" routerLink="/projects"><i class="fa fa-2x fa-tasks"></i> Projects</a>
+            </li>
 
 
-        <li class="nav-item">
+            <li class="nav-item">
 
 
-          <a class="nav-link" routerLink="/services"
-            ><i class="fa fa-2x fa-calendar"></i> Services</a
-          >
-        </li>
+                <a class="nav-link" routerLink="/services"><i class="fa fa-2x fa-calendar"></i> Services</a>
+            </li>
 
 
 
-        <li class="nav-item">
+            <li class="nav-item">
 
 
-          <a class="nav-link" routerLink="/contact"
-            ><i class="fa fa-2x fa-phone"></i> Contact</a
-          >
-        </li>
+                <a class="nav-link" routerLink="/contact"><i class="fa fa-2x fa-phone"></i> Contact</a>
+            </li>
 
-          <li *ngIf="isLoggedIn()" class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-2x fa-user"></i>
-            Welcome, {{ user.displayName }}</li>
+            <li *ngIf="isLoggedIn()" class="navbar-text text-success ml-5 mr-5 d-none d-lg-inline"><i class="fas fa-2x fa-user"></i> Welcome, {{ user.displayName }}</li>
 
-          <li *ngIf="isLoggedIn()" class="nav-item"><a (click)="onLogoutClick()" routerLink="/logout" class="nav-link">
-            <i class="fas fa-2x fa-sign-out-alt"></i> Logout</a></li>
+            <li *ngIf="isLoggedIn()" class="nav-item">
+                <a (click)="onLogoutClick()" routerLink="/logout" class="nav-link">
+                    <i class="fas fa-2x fa-sign-out-alt"></i> Logout</a>
+            </li>
 
             <li *ngIf="!isLoggedIn()" class="nav-item">
                 <a routerLink="/login" class="nav-link">
